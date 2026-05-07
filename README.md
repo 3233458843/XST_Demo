@@ -214,7 +214,7 @@ elog 默认以字符串打印 data 字段，本示例已将进度值单独解析
 | 文档 | 位置 | 说明 |
 |------|------|------|
 | 驱动参考手册 | `bsp/xst_driver/XST_DRIVER.md` | 完整 API 说明、移植指南、事件处理 |
-| 通讯协议 V1.1 | `E:\Desktop\毕业\掌静脉资料\` | 湘识科技模组官方协议文档 |
+| 通讯协议 V1.1 | 湘识科技掌静脉识别模组通讯协议 V1.1 | 湘识科技模组官方协议文档 |
 | Letter Shell | https://github.com/NevermindZZT/letter-shell | 嵌入式 CLI |
 | EasyLogger | https://github.com/armink/EasyLogger | 轻量日志库 |
 | lwrb | https://github.com/MaJerle/lwrb | 环形缓冲区 |
