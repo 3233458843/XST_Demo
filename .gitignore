@@ -1,0 +1,33 @@
+build
+mx.scratch
+!.settings.skill/
+build/
+# Build
+build/
+Debug/
+Release/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CubeMX
+Drivers/
+*.ioc
+*.mxproject
+
+# Skill
+.skill/
+
+# Object files
+*.o
+*.d
+*.hex
+*.bin
+*.elf
+*.map
+*.su
+.skill

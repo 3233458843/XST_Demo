@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "jlinkgdbtarget",
+            "request": "launch",
+            "name": "STM32Cube: Launch JLink GDB Server",
+            "origin": "snippet",
+            "cwd": "${workspaceFolder}",
+            "preBuild": "${command:st-stm32-ide-debug-launch.build}",
+            "runEntry": "main",
+            "imagesAndSymbols": [
+                {
+                    "imageFileName": "${command:st-stm32-ide-debug-launch.get-projects-binary-from-context1}"
+                }
+            ]
+        },
+
+        {
+            "name": "JLink Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/xst_demo_f1xx.elf",
+            "servertype": "jlink",
+            "serverpath": "D:/Jlink/JLinkGDBServerCL.exe",
+            "device": "STM32F103C8",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "runToMain": true,
+            "svdFile": "D:/STM32cubemx_clt/STM32CubeCLT_1.21.0/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
+            "armToolchainPath": "D:/STM32cubemx_clt/STM32CubeCLT_1.21.0/GNU-tools-for-STM32/bin",
+            "showDevDebugOutput": "parsed"
+        },
+        {
+            "name": "ST-Link Debug (OpenOCD)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/xst_demo_f1xx.elf",
+            "servertype": "openocd",
+            "serverpath": "D:/openocd/OpenOCD/bin/openocd.exe",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "searchDir": [
+                "D:/openocd/OpenOCD/share/openocd/scripts"
+            ],
+            "runToEntryPoint": "main",
+            "runToMain": true,
+            "svdFile": "D:/STM32cubemx_clt/STM32CubeCLT_1.21.0/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
+            "armToolchainPath": "D:/STM32cubemx_clt/STM32CubeCLT_1.21.0/GNU-tools-for-STM32/bin",
+            "showDevDebugOutput": "parsed"
+        }
+    ]
+}

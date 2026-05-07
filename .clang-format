@@ -1,0 +1,41 @@
+
+BasedOnStyle: LLVM
+
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+ColumnLimit: 100
+
+
+BreakBeforeBraces: Linux
+
+
+AlignConsecutiveMacros: true
+
+
+AlignConsecutiveAssignments: true
+
+
+AlignConsecutiveDeclarations: true
+
+
+AlignConsecutiveBitFields: true
+
+
+PointerAlignment: Right
+
+SpaceBeforeAssignmentOperators: true
+
+SpacesInParentheses: false
+
+SpacesInSquareBrackets: false
+
+SpaceBeforeParens: ControlStatements
+
+
+AlignTrailingComments: true
+
+
+IndentCaseLabels: true
